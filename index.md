@@ -9,15 +9,15 @@ country: "us"      # lowercase two-letter ISO country code such as "fr" (see htt
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
 latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "April 28-May 1"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "9:00 a.m. - 12:30 p.m."    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+humandate: "April 28 - May 1, 2025"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 a.m. - 12:30 p.m. CST"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
 startdate: 2025-04-28      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2025-05-01        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Chris Endemann"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["facilitator@datascience.wisc.edu"]   # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  https://pad.carpentries.org/2025-04-28-uwmadison-textanalysis optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+helper: ["Chris Endemann", "TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["facilitator@datascience.wisc.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://pad.carpentries.org/2025-04-28-uwmadison-textanalysis  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+eventbrite:     # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 what3words:           # optional: what3words (https://what3words.com) address of the workshop venue, without leading slashes e.g. "globe.lessening.computers"
 ---
 
@@ -81,27 +81,79 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
-
-{% comment %}
-INTRODUCTION
-
-Edit the general explanatory paragraph below if you want to change
-the pitch.
-{% endcomment %}
+<h2 id="Overview">Overview</h2>
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
-<p align="center">
-  <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
-  </em>
+This <a href="https://carpentries-incubator.github.io/python-intermediate-development/">lesson</a> aims to teach a core set of established, intermediate-level software development skills and best practices for working as part of a team in a research environment. Python is used as the example programming language. The skills taught are not an exhaustive list (see learning objectives below) but rather a selective and proven set of collaborative development techniques that provide a strong foundation for continued learning. Learners in this lesson will gain <strong>intermediate software engineering skills</strong> to design more robust, maintainable software, moving beyond simple scripts to code that considers the full software lifecycle, stakeholder needs, team collaboration, and structured development processes.
 </p>
+
+<h4 align="left"><strong>Learning Objectives</strong></h4>
+
+<p align="left">
+  <em>By the end of this course, participants will be able to:</em>
+</p>
+
+<ul>
+  <li>Set up and use a development environment with source code management tools for collaborative development</li>
+  <li>Automate code testing using a framework, parameterization, and continuous integration</li>
+  <li>Apply programming paradigms and design techniques to create robust, extensible software</li>
+  <li>Understand and use code review processes to improve software quality</li>
+  <li>Prepare and release software for reuse by others</li>
+  <li>Use agile techniques to manage feedback and software improvement</li>
+</ul>
+
+Check the <a href="https://carpentries-incubator.github.io/python-intermediate-development/">lesson website</a> to preview the full schedule of topics.
+
+<h4 align="left"><strong>Target Audience & Prerequisites</strong></h4>
+
+<p align="left">
+  <strong>This lesson is for you if:</strong>
+</p>
+
+<ul>
+  <li>You’ve been writing software for a while, possibly for others, but it’s undocumented or unstructured.</li>
+  <li>You want to learn:
+    <ul>
+      <li>Intermediate software engineering techniques and tools</li>
+      <li>How to collaborate effectively with others to develop software</li>
+      <li>How to prepare your software for use by others</li>
+    </ul>
+  </li>
+  <li>You meet the prerequisites detailed below for Python, Git, and Shell.
+  </li>
+</ul>
+
+<p align="left">
+  <strong>Participants should meet the following criteria. <a href="https://carpentries-incubator.github.io/python-intermediate-development/quiz.html">Take this short quiz</a> to check your readiness:</strong>
+</p>
+
+<h5 align="left"><strong>Git</strong></h5>
+
+<ul>
+  <li>You understand the concept of version control.</li>
+  <li>You’ve configured Git and created a local repository.</li>
+  <li>You know how to clone repositories, add/commit changes, and push/pull to/from a remote repository.</li>
+  <li>Optional: You’ve compared file versions or ignored specific files.</li>
+</ul>
+
+<h5 align="left"><strong>Python</strong></h5>
+
+<ul>
+  <li>You have basic programming knowledge, including variables, lists, conditionals, functions, and importing libraries.</li>
+  <li>You’ve written Python scripts or Jupyter notebooks to solve domain-specific problems.</li>
+</ul>
+
+<h5 align="left"><strong>Shell</strong></h5>
+
+<ul>
+  <li>You’ve used a command line interface (e.g., Bash) to navigate a UNIX-style file system and run commands.</li>
+  <li>Optional: You’ve redirected inputs/outputs from commands.</li>
+</ul> 
+
+<hr/>
+
+<h2 id="general">General Information</h2>
+
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
@@ -296,7 +348,7 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/policies/coc/">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
 </p>
 
 <p class="text-center">
@@ -462,7 +514,8 @@ during the workshop.
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
 {% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-<a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
-to obtain the software and data you will need to follow the lesson.
+<strong>Please check the "Setup" page of the 
+<a href ="https://carpentries-incubator.github.io/python-intermediate-development/">lesson site</a> for instructions to follow 
+to obtain the software and data you will need to follow the lesson.</strong>
+Be sure to check your setup prior to the workshop — the earlier the better. If you need any assistance, please visit the <a href ="https://hub.datascience.wisc.edu/consultation/#:~:text=expertise%20you%20need.-,Coding%20Meetup,-Coding%20Meetup%20is">Data Science Hub</a> on Thursdays, 2:30-4:30pm. For appointments outside of Coding Meetup, please email <a href ="mailto:facilitator@datascience.wisc.edu">facilitator@datascience.wisc.edu</a>.
 {% endif %}
