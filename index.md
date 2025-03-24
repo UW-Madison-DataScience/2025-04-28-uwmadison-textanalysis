@@ -90,7 +90,7 @@ Edit the general explanatory paragraph below if you want to change
 the pitch.
 {% endcomment %}
 
-Introduction to Text Analysis, __designed for those with Python experience__ (how to create functions, for loops, conditional logic, use the pandas library, etc.). The workshop covers Natural Language Processing (NLP) basics, API usage, data preparation, document/word embeddings, topic modeling, Word2Vec, Transformer models using Hugging Face, and ethical considerations. Students and researchers working in the digital humanities are especially encouraged to attend! View the [the lesson homepage]({{ site.incubator_lesson_site }}) for an overview of the topics we will cover.
+Join this workshop for a practical Introduction to Text Analysis, __designed for those with Python experience__ (how to create functions, for loops, conditional logic, use the pandas library, etc.). The workshop covers Natural Language Processing (NLP) basics, API usage, data preparation, document/word embeddings, topic modeling, Word2Vec, Transformer models using Hugging Face, and ethical considerations. Students and researchers working in the digital humanities are especially encouraged to attend! View the [the lesson homepage]({{ site.incubator_lesson_site }}) for an overview of the topics we will cover.
 
 
 
