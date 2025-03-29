@@ -361,8 +361,8 @@ of code below the Schedule `<h2>` header below with
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
 {% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
+Please check the <a href="{{ site.incubator_lesson_site }}">lesson site</a> for a list of lesson sections and estimated timings.
+
 {% endif %}
 
 {% comment %}
@@ -372,10 +372,10 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 
 {% if site.pilot %}
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please <a href ="mailto:facilitator@datascience.wisc.edu">contact the workshop organizers</a> if you would like more information about the planned schedule.
 {% endif %}
 
 <hr/>
-
 
 {% comment %}
 SETUP
