@@ -155,7 +155,7 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  April 28 - May 1, 9:00 a.m. - 12:30 p.m. CST.
+  April 28 - April 30, 9:00 a.m. - 12:30 p.m. CST.
   {% include workshop_calendar.html %}
 </p>
 {% endif %}
